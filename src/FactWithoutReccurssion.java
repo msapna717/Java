@@ -8,11 +8,12 @@ public class FactWithoutReccurssion {
 
 	}
 
-	public static void f(int n) {
+	public static int f(int n) {
 		for (int i = 1; i <= n; i++) {
 			fact = fact * i;
 		}
 		System.out.println("Factorial of " + n + " = " + fact);
+		return fact;
 	}
 
 }
